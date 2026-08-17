@@ -1,0 +1,8 @@
+work/
+logs/
+*.log
+.cache/
+.local/
+claude-overlay/
+unified-backup-*/
+unified-failed-*/
