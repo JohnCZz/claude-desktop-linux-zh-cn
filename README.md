@@ -84,14 +84,14 @@ chmod +x claude_linux_zh_unified.sh
 ~/.local/bin/claude-desktop-zh-maintain --rollback --no-launch
 ```
 
-如果官方应用更新后资源结构发生变化，先回滚，再恢复或重新安装官方包，然后使用最新脚本重新构建。不要删除最后一个可用备份前就清理 overlay。
+如果官方应用更新后资源结构发生变化，先回滚，再恢复或重新安装官方包，然后使用最新脚本重新构建。在确认新 overlay 可用前，不要删除最后一个可用备份。
 
 ## 验证
 
 仓库内的静态测试不需要联网，也不会修改系统：
 
 ```bash
-tests/test_static.sh
+bash tests/test_static.sh
 ```
 
 真实安装后可检查：
